@@ -1,0 +1,19 @@
+{
+  "name": "websocket-demo1",
+  "version": "1.0.0",
+  "description": "Este proyecto es una demostración simple de un chat en tiempo real usando WebSockets con Node.js, Express y la librería `ws`. Permite a múltiples usuarios conectarse a través de un navegador web y enviar mensajes que se transmiten a todos los clientes conectados.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "playwright": "^1.52.0",
+    "ws": "^8.18.2"
+  }
+}
