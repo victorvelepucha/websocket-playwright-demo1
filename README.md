@@ -6,12 +6,15 @@ Este proyecto es una demostración simple de un chat en tiempo real usando WebSo
 
 - `src/index.js`: Servidor Node.js que sirve archivos estáticos y gestiona la comunicación WebSocket.
 - `public/index.html`: Interfaz web del chat, implementada en HTML y JavaScript.
+- `test/`: Carpeta que contiene pruebas automatizadas con Playwright.
+  - `chat.spec.js`: Script de prueba que simula una conversación entre dos usuarios (Alice y Bob) en el chat, automatiza el envío de mensajes y genera capturas de pantalla como evidencia de la ejecución.
 
 ## Dependencias
 
 - [express](https://www.npmjs.com/package/express)
 - [ws](https://www.npmjs.com/package/ws)
 
+## Dependencias desarrollo
 - [playwright](https://www.npmjs.com/package/playwright) (para pruebas automatizadas)
 
 ## Instalación
@@ -20,8 +23,10 @@ Este proyecto es una demostración simple de un chat en tiempo real usando WebSo
 2. Instala las dependencias ejecutando:
 
 ```bash
-npm install express ws
+npm install
 ```
+Esto instalará las dependencias de express y ws
+Adicional para desarrollo instalará la dependencia playwright
 
 ## Ejecución
 
@@ -55,6 +60,14 @@ node test/chat.spec.js
 Esto abrirá un navegador, navegará a una página de ejemplo y tomará una captura de pantalla como demostración.
 
 Puedes modificar `test/chat.spec.js` para agregar más pruebas automatizadas según tus necesidades.
+
+### Evidencia de ejecución
+
+Al ejecutar la prueba automática, se genera una evidencia visual del chat entre dos usuarios (Alice y Bob). Puedes ver el resultado en la siguiente imagen:
+
+![Evidencia de ejecución automática: Chat entre Alice y Bob](./chat-alice-bob-evidence.png)
+
+Esta imagen muestra cómo se visualiza el chat tras la ejecución del script automatizado.
 
 ## ¿Cómo funciona?
 
